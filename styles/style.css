@@ -1,0 +1,19 @@
+h1{
+ color:chocolate;
+}
+
+/* .yellow-bg{
+    background-color: yellowgreen !important;
+} */
+
+.text-center{
+    text-align: center;
+}
+
+.large-text{
+    font-size: 2em ;
+}
+
+.yellow-bg{
+    background-color: yellow;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTour of Dom</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<style>
+    .fruits-container ul{
+        color:crimson;
+    }
+    #fruits-title{
+        color:chartreuse
+        }
+        .important-places{
+            color:darkcyan,
+            
+        }
+</style>
+<body>
+    <header>
+        <h1>welcome to my dom</h1>
+    </header>
+    <main id="main-container">
+        <h1>My awesome DOM de baba</h1>
+       <section>
+        <h1>Diverse things</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, accusantium maiores animi culpa natus non quos reiciendis tenetur expedita suscipit nisi vero beatae sunt, sequi fugiat dolore? Adipisci, repellat ea.</p>
+        <ul>
+            <li>jalali set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+            <li>DOM de re baba</li>
+        </ul>
+       </section>
+       <section class="fruits-container">
+        <h1 id="fruits-title" class="something-wrong right-thing blue-bg">Mobile Name</h1>
+        <ul>
+            <li>Applae</li>
+            <li>Nokia</li>
+            <li>Kutta</li>
+        </ul>
+       </section>
+       <section id="places-container" class="large-text">
+        <h1 id="places-title">places where i want to travel</h1>
+        <ul id="places-list">
+            <li class="important-places">Makka</li>
+            <li class="important-places">Madina</li>
+            <li class="important-places">Kaaba</li>
+            <li class="exotic">Ohud hill</li>
+        </ul>
+       </section>
+    </main>
+    <script src="js/dom.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/styleinjs.js"></script>
+    <script>
+        /* const student = {
+            name: 'Abdul',
+            age : 40,
+            ID: 11,
+            study: function(time){
+                console.log(time, 'studey korte parboa na')
+            }
+        }
+        console.log('i am also here, inside the html file') */
+
+        /* Option: 1 - gel element by tagname */
+        const liCollection = document.getElementsByTagName('li')
+        // console.log(liCollection)
+        for(let li of liCollection){
+            // console.log(li.innerText)
+        }
+       
+        /* Option: 2 - to see the inner text */
+        const allHeadings = document.getElementsByTagName('h1');
+        for(let h1 of allHeadings){
+            // console.log(h1)
+            // console.log(h1.innerText)
+        }
+
+        /* option: 3 - get element by class name which is querySelector */
+        const places = document.getElementsByClassName('important-places')
+        for(let place of places){
+            // console.log(place.innerText)
+        }
+
+        /* Option -4 :  get element by ID */
+        const fruitsTitle = document.getElementById('fruits-title');
+        // console.log(fruitsTitle)
+        fruitsTitle.innerText = 'want to change the title of this tag' /* if i want to change the text */
+
+        /* Option - 5: queryselector all - it is used to find the CSS tag */
+        const someLi = document.querySelectorAll('.fruits-container li')
+        for(let li of someLi){
+            // console.log(li.inneText)
+        }
+        /* Option - 6: get one element from css */
+        const firstLi = document.querySelector('.fruits-container li')
+        // console.log(firstLi)
+
+        const title1 = document.getElementById('fruits-title')
+        title1.getAttribute('class')
+        // console.log(title1)
+        
+
+
+    </script>
+</body>
+
+
+<!-- summery of this module
+
+1. get getElementsByTagName - it will be used less
+2. get getElementById
+3. getElementsByClassName
+4. document.querySelector
+5. document.querySelectorAll
+6. to see the text - console.log(li.inneText)
+7. fruitsTitle.innerText = 'want to change the title of this tag' /* if i want to change the text 
+*/ -->
+
+</html>
